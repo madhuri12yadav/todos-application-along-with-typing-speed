@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="microsoft.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5f59ca6ad3.js" crossorigin="anonymous"></script></head>
+<body>
+    
+,
+    
+    <div id="section1">
+        <div class="todos-bg-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="todos-heading">Todos</h1>
+                        <h1 class="create-task-heading">
+                            Create <span class="create-task-heading-subpart">Task</span>
+                        </h1>
+                        <input type="text" id="todoUserInput" class="todo-user-input" placeholder="What needs to be done?" />
+                        <button class="button" id="addTodoButton">Add</button>
+                        <h1 class="todo-items-heading">
+                            My <span class="todo-items-heading-subpart">Tasks</span>
+                        </h1>
+                        <ul class="todo-items-container" id="todoItemsContainer"></ul>
+                        <button class="button" id="saveTodoButton">Save</button>
+                            <br/>
+                            <p class="pp1">
+                                <a href="#section2" onclick="display('section2')" class="type">Typing speed test</a>
+                            </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="section2">
+        <div class="app-container">
+            <div class="container" id="speedTypingTest">
+                <h1 class="heading-speed-test">Speed Typing Test</h1>
+                <p class="sub-heading">On your fingeres lets set Go!</p>
+                <div class="time-container">
+                    <img class="image-class" src="https://assets.ccbp.in/frontend/dynamic-webapps/clock-img.png" />
+                    <p class="display-time" id="timer"></p>
+                </div>
+                <div class="text-container">
+                    <div class="spinner d-none" id="spinner">
+                        <div class="d-flex flex-row justify-content-center mt-4">
+                            <div class="spinner-border" role="status"></div>
+                        </div>
+                    </div>
+                    <p class="random-text" id="quoteDisplay"></p>
+                    <textarea class="text-area form-control" id="quoteInput" rows="7"></textarea>
+                </div>
+                <p class="result-text" id="result"></p>
+                
+                    <button class="submit-button button" id="submitBtn">Submit</button>
+                    <button class="btn btn-primary m-5" id="resetBtn">Reset</button>
+                    <button class="btn btn-primary back" onclick="display('section1')" id="resetBtn">Back/button>
+                    
+                
+            </div>
+        </div>
+        
+    </div>
+</div>
+        
+   
+  <script src="microsoft.js"></script>
+  <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+    
+</body>
+</html>
